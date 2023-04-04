@@ -8,16 +8,32 @@
 
     <input type="button" value="night" onclick="
     var target = document.querySelector('body');
+    var aList = document.querySelectorAll('a');
     if(this.value === 'night'){
       target.style.backgroundColor = 'black';
       target.style.color = 'white';
       this.value = 'day';
+      var i = 0;
+      while(i < aList.length){
+        aList[i].style.color = 'powderblue';
+        i++
+      }
     } else{
       target.style.backgroundColor = 'white';
       target.style.color = 'black';
       this.value = 'night';
+      var i = 0;
+      while(i < aList.length){
+        aList[i].style.color = 'blue';
+        i++
+      }
     }
   ">
+  <ol>
+    <li><a href="https://www.st-trigger.co.jp/">trigger</a></li>
+    <li><a href="https://www.cdprojektred.com/en">CD PROJEKT RED</a></li>
+    <li><a href="https://www.netflix.com">Netflix</a></li>
+  </ol>
     <p>
       Cyberpunk: Edgerunners (Japanese: サイバーパンク エッジランナーズ, Hepburn: Saibāpanku Edjirannāzu) is a 2022 Polish–Japanese cyberpunk web anime series based on the video game Cyberpunk 2077 by CD Projekt Red.[2] The series was animated by Studio Trigger under the supervision of CD Projekt and premiered on Netflix in September 2022.[3] Set in the Cyberpunk universe created by Mike Pondsmith, the anime serves as a prequel to the game and takes place about a year before the events of Cyberpunk 2077.
     </p>
