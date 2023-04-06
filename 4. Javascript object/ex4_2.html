@@ -4,9 +4,7 @@
     <title>Object</title>
   </head>
   <body>
-    <h1>
-      젤다의 전설 티어스 오브 더 킹덤
-    </h1>
+    <h1>젤다의 전설 티어스 오브 더 킹덤</h1>
     <script>
       var game = {
         "title": "Legend of Zelda",
@@ -21,13 +19,22 @@
       game["release date"] = "2023년 5월 12일";
       document.write("release date : " + game["release date"] + "<br>");
     </script>
-    <h2>
-      Iterate
-    </h2>
+
+    <h2>Iterate</h2>
     <script>
       for(key in game){
         document.write(key + ' : ' + game[key] + '<br>');
       }
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>
+      game.showAll = function(){
+        for (key in this) {
+          document.write(key + ' : ' + this[key] + '<br>');
+        }
+      }
+      game.showAll();
     </script>
   </body>
 </html>
