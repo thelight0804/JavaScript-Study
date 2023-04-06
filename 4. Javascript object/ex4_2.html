@@ -20,7 +20,14 @@
 
       game["release date"] = "2023년 5월 12일";
       document.write("release date : " + game["release date"] + "<br>");
-
+    </script>
+    <h2>
+      Iterate
+    </h2>
+    <script>
+      for(key in game){
+        document.write(key + ' : ' + game[key] + '<br>');
+      }
     </script>
   </body>
 </html>
