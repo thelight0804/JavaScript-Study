@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object</title>
+  </head>
+  <body>
+    <h1>
+      젤다의 전설 티어스 오브 더 킹덤
+    </h1>
+    <script>
+      var game = {
+        "title": "Legend of Zelda",
+        "version": "Tears of the Kingdom"
+      };
+      document.write("title : " + game.title + "<br>");
+      document.write("version : " + game.version + "<br>");
+
+      game.price = "74,800원";
+      document.write("price : " + game.price + "<br>");
+
+      game["release date"] = "2023년 5월 12일";
+      document.write("release date : " + game["release date"] + "<br>");
+
+    </script>
+  </body>
+</html>
