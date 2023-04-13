@@ -19,3 +19,9 @@ var Suletta = {
 
 console.log(Miorine.sum());
 console.log(Suletta.sum());
+
+var d1 = new Date('2023-04-13');
+console.log(d1.getFullYear());
+console.log(d1.getMonth());
+
+console.log(Date)
