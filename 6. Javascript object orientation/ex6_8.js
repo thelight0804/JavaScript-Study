@@ -1,9 +1,15 @@
 class Gundam{
-
+  constructor(name, first, second, third){
+    this.name = name;
+    this.first = first;
+    this.second = second;
+    this.third = third;
+    console.log('constructor');
+  }
 }
 
-var Miorine = new Gundam();
-console.log(Miorine)
+var Miorine = new Gundam('Miorine Rembran', 10, 20, 30);
+console.log(Miorine);
 
 // var Miorine = new Gundam('Miorine Rembran', 10, 20, 30);
 // Miorine.sum = function(){
