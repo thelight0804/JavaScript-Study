@@ -16,5 +16,5 @@ Miorine.sum = function(){
 
 var Suletta = new Gundam('Suletta Mercury', 5, 50, 10);
 
-console.log(Miorine.sum())
-console.log(Suletta.sum())
+console.log(Miorine.sum());
+console.log(Suletta.sum());
