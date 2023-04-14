@@ -4,19 +4,18 @@ class Gundam{
     this.first = first;
     this.second = second;
     this.third = third;
-    console.log('constructor');
+  }
+  sum(){
+    return this.first + this.second + this.third;
   }
 }
 
 var Miorine = new Gundam('Miorine Rembran', 10, 20, 30);
-console.log(Miorine);
+Miorine.sum = function(){
+  return this.first + this.second;
+}
 
-// var Miorine = new Gundam('Miorine Rembran', 10, 20, 30);
-// Miorine.sum = function(){
-//   return this.first + this.second;
-// }
+var Suletta = new Gundam('Suletta Mercury', 5, 50, 10);
 
-// var Suletta = new Gundam('Suletta Mercury', 5, 50, 10);
-
-// console.log(Miorine.sum());
-// console.log(Suletta.sum());
+console.log(Miorine.sum());
+console.log(Suletta.sum());
