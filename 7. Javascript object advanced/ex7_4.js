@@ -16,6 +16,7 @@ var ruby = Object.create(hoshino);
 ruby.name = 'ruby';
 ruby.ageFirst = 1;
 ruby.ageSecond = 15;
+ruby.avg = function(){ return (this.ageFirst + this.ageSecond) / 2; };
 
 
 console.log(hoshino.subAge());
