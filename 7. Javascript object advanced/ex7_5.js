@@ -12,8 +12,9 @@ function GundamPlus(name, first, second, third, fourth){
   Gundam.call(this, name, first, second, third);
   this.fourth = fourth;
 }
-// GundamPlus.prototype.__proto__ = Gundam.prototype;
+
 GundamPlus.prototype = Object.create(Gundam.prototype);
+GundamPlus.prototype.constructor = GundamPlus;
 
 GundamPlus.prototype.age = function(){
   return (this.first + this.second + this.third + this.fourth) / 4;
